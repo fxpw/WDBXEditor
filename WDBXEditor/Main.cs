@@ -1470,5 +1470,10 @@ namespace WDBXEditor
 
 			LoadRecentList();
 		}
-	}
+
+        private void advancedDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
 }

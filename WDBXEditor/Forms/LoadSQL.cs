@@ -16,7 +16,7 @@ namespace WDBXEditor
 {
     public partial class LoadSQL : Form
     {
-        public string ConnectionString => $"Server={txtHost.Text};Port={txtPort.Text};Database={ddlDatabases.Text};Uid={txtUser.Text};Pwd={txtPass.Text};";
+        public string ConnectionString => $"Server={txtHost.Text};Port={txtPort.Text};Database=test;User ID={txtUser.Text};Password={txtPass.Text};SslMode=Preferred";
         public bool ConnectionOnly { get; set; } = false;
         public DBEntry Entry { get; set; }
         public string ErrorMessage = string.Empty;

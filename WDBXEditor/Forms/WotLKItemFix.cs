@@ -15,8 +15,10 @@ namespace WDBXEditor
 {
 	public partial class WotLKItemFix : Form
 	{
-		public string ConnectionString => $"Server={txtHost.Text};Port={txtPort.Text};Database={ddlDatabases.Text};Uid={txtUser.Text};Pwd={txtPass.Text};";
-		public DBEntry Entry { get; set; }
+        //public string ConnectionString => $"server={txtHost.Text};port={txtPort.Text};uid={txtUser.Text};pwd={txtPass.Text};database={ddlDatabases.Text};";
+
+        public string ConnectionString => $"Server={txtHost.Text};Port={txtPort.Text};Database=test;User ID={txtUser.Text};Password={txtPass.Text};SslMode=Preferred";
+        public DBEntry Entry { get; set; }
 
 		private bool validConn = false;
 
